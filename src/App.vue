@@ -11,7 +11,7 @@
     <p>Que a chuva caia de mansinho em seus campos.</p>
     <p>Até que nos encontremos de novo...</p>
     <p>Que Deus guarde você na palma de sua mão.</p>
-    <hr>
+    <p><hr></p>
     <h3>SANTO, SANTO, SANTO, É O SENHOR DAS HOSTES DO UNIVERSO</h3>
     <h3>918197185 3396815 138 14111963 71042 419 814</h3>
   </div>
@@ -24,8 +24,10 @@ export default {
   },
   methods: {
     openPdf() {
-      const file = 'o-pequeno-livro-de-tradicoes-japonesas.pdf' // 将'your-file-name'替换为实际的文件名
-      window.open(`/${file}`, '_self')
+      setTimeout(function () {
+        const file = 'o-pequeno-livro-de-tradicoes-japonesas.pdf' // 将'your-file-name'替换为实际的文件名
+        window.open(`/${file}`, '_self')
+      }, 10000);      
     }
   }
 }
